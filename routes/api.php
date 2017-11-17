@@ -23,7 +23,7 @@ Route::get('farms/{farm}', 'FarmController@show');
 Route::post('farms', 'FarmController@store');
 Route::put('farms/{farm}', 'FarmController@update');
 Route::delete('farms/{farm}', 'FarmController@delete');
- Route::post('register', 'Auth\RegisterController@register');
-	Route::post('/login', 'Auth\LoginController@login');
+Route::post('register', 'Auth\RegisterController@register');
+Route::post('/login', 'Auth\LoginController@login');
 
-	Route::post('/logout', 'Auth\LoginController@logout');
+Route::post('/logout', 'Auth\LoginController@logout');
